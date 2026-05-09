@@ -1,4 +1,5 @@
 import { BirthdayGate } from "./components/BirthdayGate";
+import { SiteVideoBackground } from "./components/SiteVideoBackground";
 import { Hero } from "./components/Hero";
 import { FlipCarousel } from "./components/FlipCarousel";
 import { HeritageStory } from "./components/HeritageStory";
@@ -18,7 +19,8 @@ export default function App() {
   return (
     <>
       <BirthdayGate />
-      <div className="bg-rangoli min-h-screen">
+      <SiteVideoBackground />
+      <div className="relative z-10 min-h-screen">
         <Hero profileSrc="/images/gallery-1.png" />
         <FlipCarousel images={galleryImages} intervalMs={4500} />
         <ParentsSection />
