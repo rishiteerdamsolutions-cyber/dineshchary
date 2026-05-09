@@ -2,14 +2,16 @@ import { BirthdayGate } from "./components/BirthdayGate";
 import { Hero } from "./components/Hero";
 import { FlipCarousel } from "./components/FlipCarousel";
 import { HeritageStory } from "./components/HeritageStory";
+import { ParentsSection } from "./components/ParentsSection";
+import { AllSistersFamilySection } from "./components/AllSistersFamilySection";
 import { FamilySection } from "./components/FamilySection";
 
 const galleryImages = [
-  "/images/gallery-1.jpeg",
-  "/images/gallery-2.jpeg",
-  "/images/gallery-3.jpeg",
-  "/images/gallery-4.jpeg",
-  "/images/gallery-5.jpeg",
+  "/images/gallery-1.png",
+  "/images/gallery-2.png",
+  "/images/gallery-3.png",
+  "/images/gallery-4.png",
+  "/images/gallery-5.png",
 ];
 
 export default function App() {
@@ -17,28 +19,30 @@ export default function App() {
     <>
       <BirthdayGate />
       <div className="bg-rangoli min-h-screen">
-        <Hero profileSrc="/images/gallery-1.jpeg" />
+        <Hero profileSrc="/images/gallery-1.png" />
         <FlipCarousel images={galleryImages} intervalMs={4500} />
         <HeritageStory />
+        <ParentsSection />
+        <AllSistersFamilySection />
         <FamilySection
           cards={[
             {
-              title: "Eldest sister & family",
+              title: "Eldest sister & brother-in-law",
               caption:
-                "The guiding elder sister — grace, wisdom, and the first smiles that shaped our home.",
-              imageSrc: "/images/gallery-2.jpeg",
+                "The guiding elder sister and her husband — the first home we looked up to, full of grace, good counsel, and warm welcomes.",
+              imageSrc: "/images/sister-1-family.png",
             },
             {
-              title: "Second sister & family",
+              title: "Second sister & brother-in-law",
               caption:
-                "Warmth and laughter from the second pillar — celebrations made richer in her presence.",
-              imageSrc: "/images/gallery-3.jpeg",
+                "The second sister and her life partner — warmth, music in the kitchen, and celebrations that feel larger when they walk in.",
+              imageSrc: "/images/sister-2-family.png",
             },
             {
-              title: "Third sister & family",
+              title: "Third sister & brother-in-law",
               caption:
-                "The youngest sister’s nest — affectionate ties and cherished moments together.",
-              imageSrc: "/images/gallery-4.jpeg",
+                "The youngest sister and her husband — the nest that still hums with childhood stories and new traditions side by side.",
+              imageSrc: "/images/sister-3-family.png",
             },
           ]}
         />
