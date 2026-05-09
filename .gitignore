@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# Original uploads kept locally; site serves copies from public/images
+/images/
