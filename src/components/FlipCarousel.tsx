@@ -69,7 +69,7 @@ export function FlipCarousel({ images, intervalMs = 4500 }: FlipCarouselProps) {
               <img
                 src={images[frontIdx]}
                 alt=""
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
                 draggable={false}
               />
             </div>
@@ -84,7 +84,7 @@ export function FlipCarousel({ images, intervalMs = 4500 }: FlipCarouselProps) {
               <img
                 src={images[backIdx]}
                 alt=""
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
                 draggable={false}
               />
             </div>

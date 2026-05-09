@@ -16,12 +16,12 @@ export function AllSistersFamilySection({
           festoons and birthday light.
         </p>
 
-        <div className="mx-auto mt-10 overflow-hidden rounded-2xl border border-marigold-200/70 bg-white/80 shadow-xl shadow-marigold-500/10">
-          <div className="aspect-[21/11] max-h-[520px] overflow-hidden md:aspect-[24/10]">
+        <div className="mx-auto mt-10 overflow-hidden rounded-2xl border border-marigold-200/70 bg-gradient-to-b from-stone-100/90 via-white to-amber-50/30 shadow-xl shadow-marigold-500/10">
+          <div className="flex max-h-[min(560px,85vh)] items-start justify-center overflow-hidden px-2 pt-3">
             <img
               src={imageSrc}
               alt="All three sisters with their husbands at a family celebration"
-              className="h-full w-full object-cover object-[center_25%]"
+              className="mx-auto h-auto w-full max-w-5xl object-contain object-top"
             />
           </div>
         </div>

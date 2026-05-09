@@ -11,12 +11,12 @@ function FamilyPhotoCard({ title, caption, imageSrc }: FamilyCard) {
 
   return (
     <article className="group overflow-hidden rounded-2xl border border-marigold-200/70 bg-white/80 shadow-lg shadow-marigold-500/10 backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-xl">
-      <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-marigold-100/70 via-white to-lotus-100/50">
+      <div className="relative flex min-h-[280px] items-start justify-center overflow-hidden bg-gradient-to-b from-stone-100/90 via-amber-50/40 to-white px-1 pt-3 sm:min-h-[320px]">
         {!photoMissing ? (
           <img
             src={imageSrc}
             alt={title}
-            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            className="mx-auto h-auto max-h-[min(560px,78vh)] w-full object-contain object-top"
             onError={() => setPhotoMissing(true)}
           />
         ) : (

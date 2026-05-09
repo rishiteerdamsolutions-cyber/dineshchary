@@ -22,7 +22,7 @@ export function Hero({ profileSrc }: HeroProps) {
               alt="Dinesh Chary Bompelly — portrait"
               width={280}
               height={280}
-              className="aspect-square h-56 w-56 object-cover sm:h-64 sm:w-64 md:h-72 md:w-72"
+              className="aspect-square h-56 w-56 object-cover object-top sm:h-64 sm:w-64 md:h-72 md:w-72"
             />
           </div>
           <div className="absolute -bottom-2 left-1/2 flex -translate-x-1/2 rounded-full bg-white/95 px-4 py-1 text-xs font-medium uppercase tracking-widest text-marigold-700 shadow-md ring-1 ring-marigold-200">

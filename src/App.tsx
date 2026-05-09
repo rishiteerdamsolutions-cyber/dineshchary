@@ -21,27 +21,27 @@ export default function App() {
       <div className="bg-rangoli min-h-screen">
         <Hero profileSrc="/images/gallery-1.png" />
         <FlipCarousel images={galleryImages} intervalMs={4500} />
-        <HeritageStory />
         <ParentsSection />
+        <HeritageStory />
         <AllSistersFamilySection />
         <FamilySection
           cards={[
             {
-              title: "Eldest sister & brother-in-law",
+              title: "Paloju Ramya & Paloju Vijay",
               caption:
-                "The guiding elder sister and her husband — the first home we looked up to, full of grace, good counsel, and warm welcomes.",
+                "Eldest sister and brother-in-law — daughters Chaitra Varshini (elder) and Sri Deekshitha (younger); the first home we looked up to for grace and steady warmth.",
               imageSrc: "/images/sister-1-family.png",
             },
             {
-              title: "Second sister & brother-in-law",
+              title: "Nandagiri Pranitha & Nandagiri Aditya",
               caption:
-                "The second sister and her life partner — warmth, music in the kitchen, and celebrations that feel larger when they walk in.",
+                "Second sister and brother-in-law — laughter that fills the room and celebrations that feel grander in their company.",
               imageSrc: "/images/sister-2-family.png",
             },
             {
-              title: "Third sister & brother-in-law",
+              title: "Pamulaparthy Kavya Sri & Pamulaparthy Varun Raj",
               caption:
-                "The youngest sister and her husband — the nest that still hums with childhood stories and new traditions side by side.",
+                "Third sister and brother-in-law — where childhood memories stay tender and new chapters shine brightly.",
               imageSrc: "/images/sister-3-family.png",
             },
           ]}
